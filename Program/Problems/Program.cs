@@ -7,10 +7,11 @@ namespace Problems
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine(Prefix("test"));
+            Program p = new Program();
+            Console.WriteLine(p.Prefix("test and test"));
         }
 
-        static string Prefix(string input)
+        public string Prefix(string input)
         {
             //Special case: input is null, return null.
             if(input == null) 
@@ -18,7 +19,7 @@ namespace Problems
                 return null;
 			}
             //Setup
-            int len = input.Length;//is this even a thing idk -- check.
+            int len = input.Length;
             int numWords = 0;
             bool sawSpace = false;
             //Body
