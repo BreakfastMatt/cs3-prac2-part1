@@ -1,0 +1,8 @@
+language: csharp
+dotnet: 2.2
+script:
+	dotnet test Problems.Tests
+matrix:
+  include:
+    - dist: xenial
+    - dist: trusty
