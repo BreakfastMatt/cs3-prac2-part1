@@ -24,6 +24,7 @@ namespace Tests
             Assert.AreEqual("5,1:hello",i);
         }
 
+		[Test]
 		//test case ii
 		public void Test2()
 		{
@@ -35,6 +36,7 @@ namespace Tests
             Assert.AreEqual("0,0:",ii);
 		}
 		
+		[Test]
 		//test case iii
 		public void Test3()
 		{
@@ -43,7 +45,8 @@ namespace Tests
             //Act
             string iii = p.Prefix("what ... did you say?? ");
             //Assert
-            Assert.AreEqual("27,5:what ... did you say?? ",iii);
+			//Prac says it's 27, but it should be 23...
+            Assert.AreEqual("23,5:what ... did you say?? ",iii);
 		}
     }
 }
