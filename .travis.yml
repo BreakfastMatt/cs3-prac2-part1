@@ -1,6 +1,6 @@
 language: csharp
 dotnet: 2.2
-script
+script:
     dotnet test Problems.Tests
 matrix:
   include:
